@@ -1,26 +1,17 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="p-14 ">
+    <router-link to="/" class=" justify-center text-4xl text-yellow-300">pokemon Picker</router-link>
+    <router-link to="/test" class=" ml-10 justify-center text-4xl text-blue-300">Hola</router-link>
+  </div>
+  <router-view/>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script setup>
+  // import PokedexMain from "./components/PokedexMain.vue";
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style> 
+
 </style>
