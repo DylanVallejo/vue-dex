@@ -11,14 +11,16 @@
             :key="idx" 
         >
         
-        <router-link :to="`/test/${pokemonID[pokemon.name]}`">{{ pokemon.name }}</router-link>
+        <router-link :to="`/test/${pokemonID[pokemon.name]}`">
+            {{ pokemon.name }}
+        </router-link>
         
         </div>
     </div>
 </template>
 <script setup>
 
-import { computed, reactive,ref} from 'vue';
+import { computed, reactive,ref } from 'vue';
 
     
 const fetchData = reactive({
